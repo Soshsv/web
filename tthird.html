@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #2f0f0d;
+    }
+
+    marquee {
+        color: rgb(249, 199, 199);
+    }
+
+    li {
+        color: rgb(249, 199, 199);
+    }
+
+    #head {
+        display: flex;
+        background: url(data:image/jpeg;base64,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);
+        background-position-y: 449px;
+        filter: contrast();
+        background-size: contain;
+        border-radius: 57px 20px;
+    }
+
+    .header {
+        color: #9229d4;
+        font-family: sans-serif;
+        font-size: 5vh;
+        text-shadow: 1px 1px 1px rgb(250, 250, 250);
+    }
+
+    a {
+        color: rgba(231, 28, 28, 0);
+        text-decoration: none;
+
+    }
+
+    div {
+        padding: 3vh;
+    }
+
+    footer {
+        color: rgb(204, 201, 248);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav>
+        <div id="head">
+            <div class="header"><a href="home.html">HOME</a></div>
+        </div>
+    </nav>
+    <table>
+        <tr>
+            <td>
+                <img src="https://th.bing.com/th?id=OIP.-aGbdJSc5Hx8ujudx-VVdAHaHZ&w=250&h=249&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    alt="">
+            </td>
+            <td colspan="2">
+                <marquee scrollamount="10">Animate is used to design vector graphics and animation for television
+                    series, online animation, websites, web applications, rich web applications, game development,
+                    commercials, and other interactive projects. The program also offers support for raster graphics,
+                    rich text, audio video embedding, and ActionScript 3.0 scripting. Animations may be published for
+                    HTML5, WebGL, Scalable Vector Graphics (SVG) animation and spritesheets, and legacy Flash Player
+                    (SWF) and Adobe AIR formats.[2] The developed projects also extend to applications for Android, iOS,
+                    Windows Desktop and MacOS.</marquee>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li style="font-size: 30px;">Tools</li>
+                    <li>Pencil</li>
+                    <li>Timeline</li>
+                    <li>Brush</li>
+                    <li>Lasso Tool</li>
+                    <li>Selection Tool</li>
+                    <a href="#">
+                        <li
+                            style="color: rgb(255, 0, 0);font-family: Courier, monospace;font-size: 20px;cursor: pointer;">
+                            download software</li>
+                    </a>
+                </ul>
+            </td>
+            <td><img src="" alt="" height="500px"></td>
+            <td>
+                <h2 style="color: rgb(249, 199, 199) ;">required for Operate</h2>
+
+                <li>Processor Intel or AMD Quad-Core Processor</li>
+                <li>OS 64-bit Windows 10 or later</li>
+                <li>RAM 16 GB</li>
+                <li>
+                    GPU 2 GB of GPU VRAM</li>
+                <li> Hard Disk 15 GB of free space plus additional space required for installation</li>
+                <li>Monitor Resolution 1920 x 1080</li>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <img src="https://images.wondershare.com/filmora/article-images/2022/01/10-best-2d-animation-software-in-2022-03.gif"
+                    alt="" style="height: 400px;width: auto;display: inline;">
+                <img src="t2three.png" style="height: 450px;width: auto;display: inline;">
+            </td>
+        </tr>
+
+    </table>
+    <footer>
+        <hr>
+        <center>
+            <h2>OVERVIEW</h2>
+            <hr>
+        </center><br>It was first released in 1996 as FutureSplash Animator, and then renamed Macromedia Flash upon its
+        acquisition by Macromedia. It served as the main authoring environment for the Adobe Flash platform,
+        vector-based software for creating animated and interactive content. It was renamed Adobe Animate in 2016 to
+        more accurately reflect its market position then, since over a third of all content created in Animate uses
+        HTML5.
+        The first version of Adobe Flash/Adobe Animate was FutureSplash Animator, a vector graphics and vector
+        animations program released in May 1996. FutureSplash Animator was developed by FutureWave Software, a small
+        software company whose first product, SmartSketch, was a vector-based drawing program for pen-based computers.
+        With the implosion of the pen-oriented operating systems, it was ported to Microsoft Windows as well as Apple
+        Inc.'s Classic Mac OS. In 1995, the company decided to add animation abilities to their product and to create a
+        vector-based animation platform for World Wide Web; hence FutureSplash Animator was created. (At that time, the
+        only way to deploy such animations on the web was through the use of Java.) The FutureSplash animation
+        technology was used on websites such as MSN, The Simpsons website and Disney Daily Blast of The Walt Disney
+        Company.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+
+  .m {
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 243px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 10px 9px 12px #484848;
+    filter: unset;
+  }
+
+  body {
+    background: url("https://cdn.wallpapersafari.com/83/6/DY9RHb.gif");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #head {
+    display: flex;
+    justify-content: space-between;
+    background: url(https://media.giphy.com/media/yavBtVlVpNB3a/source.gif);
+    background-position-y: 126px;
+    filter: contrast();
+    background-size: cover;
+    border-radius: 57px 20px;
+  }
+
+  .header {
+    color: #9229d4;
+    font-family: sans-serif;
+    font-size: 5vh;
+    text-shadow: 1px 1px 1px rgb(250, 250, 250);
+  }
+
+  div {
+    padding: 3vh;
+  }
+
+  .m:before,
+  .m:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .m img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+  }
+
+  .m:before,
+  .m:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .m:before {
+    width: 0;
+    height: 1px;
+  }
+
+  .m:after {
+    height: 0;
+    width: 1px;
+  }
+
+  .m figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+  }
+
+  .m h3,
+  .m h4 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+    opacity: 0;
+  }
+
+  .m h4 {
+    font-size: .8em;
+    text-transform: uppercase;
+  }
+
+  .m a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .m:hover img,
+  .m.hover img {
+    zoom: 1;
+    filter: alpha(opacity=20);
+    -webkit-opacity: 0.2;
+    opacity: 0.2;
+  }
+
+  .m:hover:before,
+  .m.hover:before,
+  .m:hover:after,
+  .m.hover:after {
+    opacity: 1;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+
+  .m:hover:before,
+  .m.hover:before {
+    width: 40px;
+  }
+
+  .m:hover:after,
+  .m.hover:after {
+    height: 40px;
+  }
+
+  .m:hover h3,
+  .m.hover h3,
+  .m:hover h4,
+  .m.hover h4 {
+    opacity: 1;
+  }
+
+  .m:hover h3,
+  .m.hover h3 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  .m:hover h4,
+  .m.hover h4 {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+  }
+</style>
+
+<script>
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
+
+<body>
+  <div id="head">
+    <div class="header"><a href="home.html">HOME</a></div>
+    <div class="header">ARTIST</div>
+  </div>
+  <!-- one line section -->
+  <center>
+    <div>
+      <figure class="m">
+        <img src="https://static1.personality-database.com/profile_images/e8504c00234a43558e1c3f09a8358958.png"
+          alt="e8504c00234a43558e1c3f09a8358958.png" />
+        <figcaption>
+          <h3>jalex rosa</h3>
+          <h4>Senior Ae Pr & blender creator</h4>
+        </figcaption>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=6547efba3ed699bfJmltdHM9MTY3Nzk3NDQwMCZpZ3VpZD0yYjljNzk2OS1iNTRlLTYyMzQtMmRjNC02YjJhYjRmYzYzOWQmaW5zaWQ9NTIwMQ&ptn=3&hsh=3&fclid=2b9c7969-b54e-6234-2dc4-6b2ab4fc639d&psq=jalex+rosa&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ2ZmSjFGVmV6UU9qRFdTbEpTTFpSVXc&ntb=1"></a>
+      </figure>
+
+      <!-- second -->
+      <figure class="m"><img
+          src="https://1.bp.blogspot.com/-iRAoehMmhnA/XQWQoCSQH_I/AAAAAAAADdY/bWpN7awnBCsLE-QWdlwaSH8IE79Z40SkQCLcBGAs/s1600/IMG-20190616-WA0002.jpg"
+          alt="IMG-20190616-WA0002.jpg" />
+        <figcaption>
+          <h3>ITX KUNWAR</h3>
+          <h4>Ae Pr & environment creator</h4>
+        </figcaption>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=1f83611a5c307e03JmltdHM9MTY3ODA2MDgwMCZpZ3VpZD0yYjljNzk2OS1iNTRlLTYyMzQtMmRjNC02YjJhYjRmYzYzOWQmaW5zaWQ9NTE4Mg&ptn=3&hsh=3&fclid=2b9c7969-b54e-6234-2dc4-6b2ab4fc639d&psq=itx+kunwar+&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ3ZrNTQzLThXT3E0U1FGZlR2SUR3VWc&ntb=1"></a>
+      </figure>
+
+      <!-- third -->
+      <figure class="m"><img src="https://www.famousbirthdays.com/headshots/ignace-aleya-1.jpg"
+          alt="ignace-aleya-1.jpg" />
+        <figcaption>
+          <h3>Ignace Aleya</h3>
+          <h4>MASTER PR & ae</h4>
+        </figcaption>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=1f83611a5c307e03JmltdHM9MTY3ODA2MDgwMCZpZ3VpZD0yYjljNzk2OS1iNTRlLTYyMzQtMmRjNC02YjJhYjRmYzYzOWQmaW5zaWQ9NTE4Mg&ptn=3&hsh=3&fclid=2b9c7969-b54e-6234-2dc4-6b2ab4fc639d&psq=itx+kunwar+&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ3ZrNTQzLThXT3E0U1FGZlR2SUR3VWc&ntb=1"></a>
+      </figure>
+    </div>
+  </center>
+
+  <!-- second section -->
+
+  <center>
+    <div>
+      <figure class="m">
+        <img
+          src="https://yt3.ggpht.com/pMVV2ZsjRHa4hO3amn4QKiS1ZuPY8oJU0gaiSGwbT-qu3S8QwOZ6RwJNsoYPomUxPMlwHBMICiFS=s640-c-fcrop64=1,00000000ffffffff-nd-v1"
+          alt="yt3.ggpht.com" />
+        <figcaption>
+          <h3>Anithing</h3>
+          <h4>light & audio creator</h4>
+        </figcaption>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=361306363ef3651eJmltdHM9MTY3ODA2MDgwMCZpZ3VpZD0yYjljNzk2OS1iNTRlLTYyMzQtMmRjNC02YjJhYjRmYzYzOWQmaW5zaWQ9NTE5Nw&ptn=3&hsh=3&fclid=2b9c7969-b54e-6234-2dc4-6b2ab4fc639d&psq=anithing+indian+youtube+guy&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ1dfRVFFUkUtM0V1cUR4Rjl2ajBiQkE&ntb=1"></a>
+      </figure>
+
+      <!-- second -->
+      <figure class="m"><img
+          src="https://yt3.ggpht.com/a/AATXAJylHKkzArZp-KMmvp5oxVyqa_A9xxFFv3YY7g=s900-c-k-c0xffffffff-no-rj-mo"
+          alt="yt3.ggpht.com" />
+        <figcaption>
+          <h3>Goofy</h3>
+          <h4>master in ps</h4>
+        </figcaption>
+        <a href="https://www.youtube.com/@BennyProductions/about"></a>
+      </figure>
+
+      <!-- third -->
+      <figure class="m"><img
+          src="https://yt3.ggpht.com/a/AATXAJw1H7ZIqGuZJnm6F6LZ_7ED-ErJCJmcmD7Z7Q=s900-c-k-c0xffffffff-no-rj-mo"
+          alt="yt3.ggpht.com" />
+        <figcaption>
+          <h3>Sebastian Patrick</h3>
+          <h4>illusion creator</h4>
+        </figcaption>
+        <a href="https://www.youtube.com/@sebastianpatrickp/featured"></a>
+      </figure>
+    </div>
+  </center>
+</body>
+
+</html>
